@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Стиль контейнера додатка */
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center; /* Вирівнювання заголовка по центру */
+  }
+  
+  /* Стиль поля для вводу нових завдань */
+  #new-task-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Включає padding у ширину */
+  }
+  
+  /* Скидання стилю списку */
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Оформлення елемента списку (завдання) */
+  .task-item {
+    display: flex;
+    justify-content: space-between; /* Розташування між елементами */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Стиль для виконаних завдань */
+  .task-item.completed {
+    text-decoration: line-through; /* Перекреслений текст */
+    color: #a0a0a0; /* Сірий колір для виконаних завдань */
+  }
+  
+  /* Стиль для поля введення при редагуванні */
+  .task-item input[type="text"] {
+    flex: 1; /* Поле займає весь вільний простір */
+    border: none;
+    font-size: 16px;
+  }
+  
+  /* Стиль для чекбокса */
+  .task-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Стиль для кнопки видалення (хрестик) */
+  .delete-btn {
+    color: red;
+    cursor: pointer; /* Змінює курсор на "палець" при наведенні */
+  }
+  
+  /* Фільтри для сортування (кнопки) */
+  #filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  /* Стиль для кнопок фільтрації */
+  #filters button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
